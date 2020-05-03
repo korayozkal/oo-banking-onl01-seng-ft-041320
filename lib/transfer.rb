@@ -9,5 +9,7 @@ def initialize(sender, receiver, amount)
  @amount= amount
  end 
  
- def valid 
+
+   def valid?
+    sender.valid? && receiver.valid?
 end
