@@ -8,8 +8,7 @@ def initialize(sender, receiver, amount)
  @status= "pending"
  @amount= amount
  end 
- 
 
-   def valid?
-    sender.valid? && receiver.valid?
+def valid?
+sender.valid? && receiver.valid?
 end
